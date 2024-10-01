@@ -18,7 +18,7 @@ const UserForm = () => {
       const response = await axios.get(`https://jsonplaceholder.typicode.com/users/${id}`);
       setName(response.data.name);
     } catch (error) {
-      console.error('Có lỗi khi lấy bài viết người dùng:', error);
+      console.error('Lỗi:', error);
     }
   };
 
